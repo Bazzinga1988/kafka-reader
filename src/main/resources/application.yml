@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: gc-kafka-reader
+    index: 1
+
+server:
+  port: 5070
+  address: 0.0.0.0
+
+kafka:
+  address: "10.0.10.247:9092,110.0.10.248:9092,10.0.10.250:9092,10.0.10.225:9092,10.0.10.224:9092,10.0.10.223:9092"
+  topic:
+    message:
+      name: teledata
+      type: teledata # teledata / short-teledata / eventdata / sensor
+      group-id: gc-kafka-reader-debug
+      client-id: gc-kafka-reader-debug
+
+logger:
+  operators:
+    - 1002
+    - 1004
+    - 1005
+  devops:
+#    - 124554052586
+#    - 60129543146
+  start-date: "2018-09-01T00:00:00.000Z"
+  end-date:   "2018-10-01T00:00:00.000Z"
+  protobuf: true
+  stat-period: 100

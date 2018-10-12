@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.0.4.RELEASE'
+        springBootVersion = '2.0.5.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -23,7 +23,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'project-report'
 
 group = 'ru.glosav.glosavcluster'
-version = '0.0.1'
+version = '0.0.2'
 sourceCompatibility = 1.8
 
 bootJar {
@@ -43,8 +43,8 @@ repositories {
 
 def logbackVersion = "1.2.3"
 def slf4jVersion = "1.7.25"
-def gcJavaCommonVersion = "0.6.3"
-def gcStreamCommonVersion = "0.1.0"
+def gcJavaCommonVersion = "0.7.1"
+def gcStreamCommonVersion = "0.1.1"
 
 configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'

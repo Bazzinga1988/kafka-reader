@@ -95,7 +95,7 @@ public class LoggerConstraints {
         StringBuilder builder = new StringBuilder();
 
         if (devops != null) {
-            builder.append("\n\tdevops:\t\t\t" + Arrays.toString(operators.toArray()));
+            builder.append("\n\tdevops:\t\t\t" + Arrays.toString(devops.toArray()));
         } else {
             builder.append("\n\toperators:\t\t");
             if (operators != null) {
